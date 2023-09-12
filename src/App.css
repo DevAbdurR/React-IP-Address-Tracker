@@ -1,38 +1,66 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Libre Franklin', sans-serif;
+  font-family: 'Manrope', sans-serif;
+  font-family: 'Overpass', sans-serif;
+  font-family: 'Rubik', sans-serif;
+}
+
+body{
   text-align: center;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.App{
+  height: 100vh;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.header{
+  height: 444px;
+  background-image: url(./assets/images/pattern-bg-mobile.png);
+  background-repeat: no-repeat;
+  padding: 20px;
+}
+
+.mainHeading{
   color: white;
+  font-size: x-large;
+  font-weight: 500;
 }
 
-.App-link {
-  color: #61dafb;
+.searchContainer{
+  margin-top: 20px;
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.searchBar{
+  padding: 13px;
+  border: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 85%;
+}
+
+.searchBtn{
+  width: 15%;
+  border: none;
+  background-color: black;
+  color: white;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.mapContainer{
+  height: 100%;
+}
+
+.leaflet-container{
+  height: 100%;
 }
